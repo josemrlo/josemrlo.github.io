@@ -1,29 +1,114 @@
-h1, h2, h3, h4, p, ul, li {
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: #F1F2ED;
+}
+
+h1, h2, ul, li {
     padding: 0;
     margin: 0;
 }
 
-h1, h2, h3, h4, p {
-    margin-bottom: 1em;
+li {
+    line-height: 1.4em;
+}
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-size: 120px;
+    color: #2300d0;
+    text-transform: uppercase;
+}
+
+#des157 {
+    font-size: 16px;
+    color: #353A47;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #2300d0;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 a {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
     text-decoration: none;
+    color: #353A47;
+    margin-bottom: 1px;
+}
+
+a:hover {
+    font-weight: 400;
+    color: #272b34;
 }
 
 ul {
     list-style-type: none;
 }
 
+header {
+    width: 800px;
+    padding-top: 30px;
+    margin: auto;
+}
+
 #banner {
+    display: grid;
+    place-content: center;
     width: 800px;
     height: 250px;
+    margin: auto;
+    animation-name: gradientchangebg;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+#box {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(#F205CB, #7C05F2, #6204BF, #050259, #F23827);;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    transition: all 3s ease-out;
+    margin: 50px;
+}
+
+#box:hover {
+    transform: rotate(2475deg);
+    box-shadow: 0px 0px 100px #292929;
+}
+
+@keyframes gradientchangebg {
+    0%   {background-image: linear-gradient(#F205CB, #7C05F2, #6204BF, #050259, #F23827);}
+    25%  {background-image: linear-gradient(#F23827, #F205CB, #7C05F2, #6204BF, #050259);}
+    50%  {background-image: linear-gradient(#050259, #F23827, #F205CB, #7C05F2, #6204BF);}
+    75%  {background-image: linear-gradient(#6204BF, #050259, #F23827, #F205CB, #7C05F2);}
+    100% {background-image: linear-gradient(#7C05F2, #6204BF, #050259, #F23827, #F205CB);}
+  }
 
 main {
     display: flex;
-    flex-flow: column wrap;
     justify-content: space-between;
     width: 800px;
+    padding-bottom: 30px;
     margin: auto;
+}
+
+#left, #middle, #right {
+    box-sizing: border-box;
+    background-image: linear-gradient(#e5e6e0, #F1F2ED);
+    width: 250px;
+    height: 500px;
+    padding: 10px;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
 }

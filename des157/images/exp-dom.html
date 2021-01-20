@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation, Functions & DOM</title>
+</head>
+<body>
+    <h1>JS Experimentation, Functions & DOM</h1>
+
+    <script>
+
+        var verb = ["swim", "paint", "hike", "code", "dance", "sing"];
+        var userNum = num;
+
+        function numPick() {
+            var num = prompt("Pick a number between 0-5", "");
+
+            if (num > 5 || num === "" || num === null || num < 0) {
+                console.log("Error! You didn't enter a number from 0-5");
+            }
+            else {
+                return num;
+            }
+        }
+
+        function activity(number) {
+            console.log(`Today you will ${verb[userNum]}!`);
+        }
+
+    </script>
+</body>
+</html>

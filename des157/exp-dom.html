@@ -9,9 +9,9 @@
     <h1>JS Experimentation, Functions & DOM</h1>
 
     <script>
-
+        //I was thinking about creating a prompt that asks for a name and then a number. The number would be used to assign an activity that someone could do that day. I didn't get it to work tho!
         var verb = ["swim", "paint", "hike", "code", "dance", "sing"];
-        var userNum = num;
+        var userNum = "";
 
         function numPick() {
             var num = prompt("Pick a number between 0-5", "");
@@ -20,13 +20,15 @@
                 console.log("Error! You didn't enter a number from 0-5");
             }
             else {
-                return num;
+                activity(num);
             }
         }
 
         function activity(number) {
-            console.log(`Today you will ${verb[userNum]}!`);
+            console.log(`Today you will ${verb[num]}!`);
         }
+
+        console.log(numPick());
 
     </script>
 </body>

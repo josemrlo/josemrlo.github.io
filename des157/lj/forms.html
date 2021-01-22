@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Raleway:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Jose Murillo: Learning Journal</title>
+</head>
+<body>
+    <header id="intheader">
+        <h1 id="inthead1">Learning Journal</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2 id="inthead2">Best Practices for Form Design</h2>
+                <time datetime="2021-01-21">January 21, 2021</time>
+                <p class="intp">Forms have gotten a lot of attention by designers in recent years. We’ve learned some best practices for creating forms on the web that increase the likelihood of follow-through and make the web accessible to all. Salim Ansari shares <a href="https://uxdesign.cc/best-practices-for-form-design-ff5de6ca8e5f">20 tips to boost form usability</a> in a Medium article. I have read about best practices for form design in the past, so I’ll highlight some new things I learned. First, I have been wondering why asterisks (“*”) were slowly going away in forms, and it turns out the reason is because they’re bad design. While it’s good design to distinguish optional and required fields, asterisks are perceived as a mandatory action, and hey, who wants to feel controlled? A better way to distinguish between optional and required fields is to simply include an optional tag on the items that are optional. </p>
+
+                <p class="intp">Another thing that surprised me was that placeholder text is now a no-no. The reasoning behind this is because users lose the hint of placeholder text the second they click in an input field. A better practice is to include the hint underneath the input field so that the user can reference this if needed. I also never thought about input field sizes, but now I know that sizing fields accordingly is a deliberate design. For example email fields are longer than zip code fields. This is what designers would call an “affordance” because the user gets an extra hint about what to fill into a certain input field (making the user experience that much smoother).</p>
+
+                <p class="intp">One final note. I’m currently taking a writing class on user experience documentation and a big topic of discussion is the importance of accessibility. Tim Berner’s Lee wanted the web to be accessible to everyone—so we must design in this manner. I think it’s so cool that there’s guidelines and resources we can use as designers to create accessible web experiences. I had no idea about the minimum contrast ratio provided by <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">WCAG</a>, but now that I know, I can implement that into my design.</p>
+            </article>
+        </main>
+    </div>
+
+    <footer> 
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+    
+</body>
+</html>

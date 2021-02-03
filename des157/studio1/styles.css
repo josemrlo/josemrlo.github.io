@@ -1,0 +1,189 @@
+body {
+    background-color: #000022;
+    color: #ADA8B6;
+    background: url('images/madlibsbg2x.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, label, p {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ADA8B6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 40px;
+}
+
+a:hover {
+    font-weight: 300;
+    color: #e4dfed;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+main {
+    width: 600px;
+    margin: auto;
+}
+
+#myform {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 600px;
+}
+
+.field {
+    padding: 0px 40px 0px 40px;
+}
+
+#btn {
+    width: 240px;
+    height: 68px;
+    background-color: #000022;
+    border: 1px solid #707070;
+    border-radius: 50px;
+    color: #ADA8B6;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    outline: none;
+    box-shadow: 0px 0px 20px #000022;
+}
+
+#btnbox {
+    padding-top: 30px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 100px;
+}
+
+label {
+    display: block;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    padding-left: 2px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 0;
+    padding-top: 3px;
+    padding-left: 4px;
+    padding-bottom: 12px;
+}
+
+span {
+    font-weight: 600;
+}
+
+#fname, #adj, #adv, #noun, #verb, #pnoun {
+    width: 190px;
+    height: 33px;
+    background-color: #1B1D31;
+    border: 1px solid #707070;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ADA8B6;
+    opacity: 77%;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    background: url('images/madlibsol2x.jpg') no-repeat center center fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#madlib {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: rgba(251, 255, 170, 0.495);
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000022;
+    margin: auto;
+}
+
+#madlibp {
+    display: block;
+    width: 700px;
+    height: 450px;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 42px;
+    color: #5c5c5e;
+}
+
+#wakebox {
+    display: block;
+    width: 300px;
+    height: 100px;
+}
+
+#wake {
+    width: 240px;
+    height: 68px;
+    background-color: #6262d2;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 50px;
+    color: rgb(235, 235, 235);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    outline: none;
+    box-shadow: 0px 0px 10px rgb(106, 106, 106);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}

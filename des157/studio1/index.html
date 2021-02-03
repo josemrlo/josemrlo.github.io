@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Palanquin:wght@300;400&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>DREAMSCAPE Madlib</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1><span>DREAM</span>SCAPE</h1>
+        </header>
+        <main>
+            <form id="myform">
+                <div class="field">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname">
+                    <p>e.g. Pablo</p>
+                </div>
+
+                <div class="field">
+                    <label for="adj">ADJECTIVE</label>
+                    <input type="text" id="adj">
+                    <p>e.g. pretty</p>
+                </div>    
+
+                <div class="field">
+                    <label for="adv">ADVERB</label>
+                    <input type="text" id="adv">
+                    <p>e.g. slowly</p>
+                </div>
+
+                <div class="field">
+                    <label for="noun">NOUN</label>
+                    <input type="text" id="noun">
+                    <p>e.g. kitty</p>
+                </div>
+
+                <div class="field">
+                    <label for="verb">VERB</label>
+                    <input type="text" name="" id="verb">
+                    <p>e.g. swim</p>
+                </div>
+
+                <div class="field">
+                    <label for="pnoun">PLURAL NOUN</label>
+                    <input type="text" name="" id="pnoun">
+                    <p>e.g. vitamins</p>
+                </div>
+                    
+                <div id="btnbox">
+                    <input type="submit" value="Let's Go!" id="btn">
+                </div>
+            </form>
+
+            <article id="error" class="hidden"><p id="errorp"></p></article>
+        </main>
+    </div>
+
+    <section id="overlay" class="hidden">
+        <article id="madlib">
+            <p id="madlibp"></p>
+            <div id="wakebox">
+                <button id="wake" class="close">Wake Up!</button>
+            </div> 
+        </article>
+    </section>
+
+    <footer>    
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+</body>
+</html>

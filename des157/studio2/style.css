@@ -1,0 +1,97 @@
+html {
+    font-family: 'Noto Serif TC', serif;
+}
+
+body, #container, img, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+h1 {
+    position: absolute;
+    width: 1024px;
+    left: 20px;
+    top: 15px;
+    z-index: 1;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    font-weight: 200;
+}
+
+img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.artangels {
+    font-size: 140px;
+    line-height: 65px;
+    color: aqua;
+    transition: top 1s;
+    left: 800px;
+    top: 80px;
+}
+
+.artangelsbody {
+    background-color: #EF443D;
+    transition: all 2s;
+}
+
+.halfaxa {
+    font-size: 140px;
+    line-height: 65px;
+    color: rgb(247, 247, 247);
+    transition: top 1s;
+    left: 800px;
+    top: 280px;
+}
+
+.halfaxabody {
+    background-color: #000000;
+    transition: all 2s;
+}
+
+.missa {
+    width: 700px;
+    font-size: 140px;
+    line-height: 140px;
+    color: rgb(199, 190, 197);
+    transition: top 1s;
+    left: 800px;
+    top: 480px;
+}
+
+.missabody {
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(170,75,181,1) 100%);
+    transition: all 2s;
+}
+
+a {
+    text-decoration: none;
+    color: #ADA8B6;
+    font-size: 16px;
+    padding: 40px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding: 20px;
+}

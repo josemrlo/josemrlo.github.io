@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Game of Piggy</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Game of PIG</h1>
+        <div id="rules">
+            <h2>Rules</h2>
+            <ol>
+                <li>First player is chosen randomly.</li>
+                <li>The player whose turn it is rolls the dice.</li>
+                <li>The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn.</li>
+                <li>After each roll, the current player can either roll again, (assuming a "one" was not rolled) or they can pass to the other player.
+                    <ul>
+                        <li>WARNING: If you roll two "ones" (snake eyes), your current score gets zeroed out.</li>
+                    </ul>
+                </li>
+                <li>The first player to get 30 points or higher wins.</li>
+            </ol>
+        </div>
+
+        <form>
+            <div id="players">
+                <div class="field">
+                    <label for="player1">Player 1</label>
+                    <input type="text" id="player1">
+                    <p class="nickname">e.g. Boba_Lord</p>
+                </div>
+
+                <div class="field">
+                    <label for="player2">Player 2</label>
+                    <input type="text" id="player2">
+                    <p class="nickname">e.g. Archf3y</p>
+                </div>
+            </div>
+
+            <div id="gamecontrol">
+                <input type="submit" value="Start Game" id="startgame">
+            </div>
+        </form>
+    
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+    </div>
+
+    <footer>
+        <a class="ref" href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a class="ref" href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        <a class="ref" href="sources.html">Sources</a>
+    </footer>
+    
+</body>
+</html>

@@ -1,5 +1,6 @@
 body {
-    background: #000;
+    background-color: #000;
+    background:url(images/bg.jpg);
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 19px;
     color: #E6E6E6;
@@ -20,7 +21,7 @@ h1 {
     left: 30%;
     top: 38%;
     transform: translate(-50%, -50%);
-    font-size: 180px;
+    font-size: 130px;
     font-weight: 400;
     letter-spacing: -4px;
     text-shadow: 1px 1px 30px #000;
@@ -46,38 +47,45 @@ span {
 }
 
 /* planet arrangement start */
-#sagrad, #beabody, #realiti, #idoru {
-    display: block;
+.planet {
+    position: absolute;
+    transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
+    border-radius: 50%;
+}
+
+@keyframes spin{
+    100%{background-position:100%;}
 }
 
 .maindisplay {
-    position: absolute;
-    transform: translate(-50%, -50%);
+    background-image:url(images/planets/idoru.jpg);
+    background-size: cover;
     left: 50%;
     top: 50%;
+    box-shadow: -60px -60px 65px 2px #000 inset, 0px 0px 50px 2px rgb(23, 23, 23);
+    animation: spin 30s linear alternate infinite;
 }
 
 .hidden {
     visibility: hidden;
 }
 
-.nextup {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    opacity: 0.5; 
+.nextdown {
+    background-image:url(images/planets/realiti.jpg);
+    background-size: cover;
     left: 50%;
-    top: -15%;
-    opacity: 0.5;
+    top: -25%;
+    opacity: 0.4;
 }
 
-.nextdown {
-    position: absolute;
-    transform: translate(-50%, -50%);
+.nextup {
+    background-image:url(images/planets/beabody.jpg);
+    background-size: cover;
     left: 50%;
-    bottom: -85%;
-    opacity: 0.5;
+    bottom: -95%;
+    opacity: 0.4;
 }
 /* end of planet arrangement */
 

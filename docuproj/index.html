@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous"/>
+    <!-- Google font: Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- main stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- smoothscroll polyfill script -->
+    <script src="smoothscroll.js"></script>
+    <!-- main script -->
+    <script src="script.js" defer></script>
+    <title>Jose Murillo – Documentation Project: Written Instructions</title>
+</head>
+<body>
+    <header>
+        <h1>Creating an Interactive Prototype on Figma</h1>
+    </header>
+    <div id="container">
+        <main id="instructions">
+            <article>
+                <section id="first" class="concept">
+                    <h2>What is Figma?</h2>
+                    <p>Figma is a free, web-based design software that’s used by many industry professionals.</p>
+                </section>
+        
+                <section id="second" class="concept">
+                    <h2>What can I do on Figma?</h2>
+                        <ul>
+                            <li>Create UI designs and components</li>
+                            <li>Create design systems</li>
+                            <li>Create and share interactive prototypes</li>
+                            <li>Work simultaneously in teams</li>
+                        </ul>
+                </section>
+        
+                <section id="third" class="task">
+                    <h2>Before you start</h2>
+                    <!-- 2 steps -->
+                    <ol>
+                        <li>Sign in to Figma.com or create an account</li>
+                        <li><a href="https://drive.google.com/file/d/15u-NclNB7x-WjTf2kNp6gKpGztrO_8yy/view?usp=sharing" target="_blank">Download Sample File</a> (Google Drive, 9.4 MB)</li>
+                    </ol>
+                    <p class="result">You are ready to start.</p>
+                </section>
+        
+                <section id="fourth" class="task">
+                    <h2>Importing files</h2>
+                    <!-- 2 steps -->
+                    <ol>
+                        <li>
+                            Drag and drop downloaded Figma file (spotify-ui.fig) into <strong>Drafts</strong>
+
+                            <img class="blockimg"  src="images/importing-file.gif" alt="drag and drop file from desktop into Figma" width="400">
+                        </li>
+
+                        <li>Open <strong>spotify-ui</strong> draft</li>
+                    </ol>
+                    <p class="result">You have successfully imported the sample Figma file.</p>
+                </section>
+        
+                <section id="fifth" class="task">
+                    <h2>Connecting frames</h2>
+                    <!-- 7 steps -->
+                    <ol>
+                        <li>
+                            Switch to prototype mode by clicking on the <strong>Prototype</strong> tab in the properties panel to the right
+                            <img class="blockimg" src="images/prototype-panel.png" alt="prototype tab on Figma" width="200">
+                        </li>
+                        <li>
+                            Select the <strong>Home</strong> frame under the <strong>Layers</strong> panel to the left
+                            <img class="blockimg" src="images/layer-panel.png" alt="layer panel on Figma" width="200">
+                        </li>
+                        <li>Hover to the <strong>Prototype</strong> panel and set the <strong>Overflow</strong> behavior to <em>no scrolling</em></li>
+                        <li>
+                            Select the node on the right side of the <strong>Home</strong> frame and drag it to the <strong>Search</strong> frame
+                            <img class="blockimg" src="images/frames.gif" alt="connecting node from one frame onto another" width="500">
+                        </li>
+                        <li>
+                            Adjust interaction effects using the Interaction details window that appears after connecting a frame
+                            <img class="blockimg" src="images/interaction-details.png" alt="interaction details window on Figma" width="200">
+                        </li>
+                        <li>Connect the <strong>Search</strong> frame back to the <strong>Home</strong> frame by repeating steps 4 and 5</li>
+                        <li>Test your prototype by clicking on the ‘play’ button on the top right of the control panel <img src="images/play-icon.png" alt="'play' button icon on Figma" height="30"></li>
+                    </ol>
+                    <p class="result">You have successfully connected two frames.</p>
+                </section>
+        
+                <section id="sixth" class="task">
+                    <h2>Connecting frame with objects</h2>
+                    <!-- 6 steps -->
+                    <ol>
+                        <li>Make sure you’re on prototype mode and <strong>Overflow</strong> behavior is set to <em>no scrolling</em></li>
+                        <li>Select the ‘search icon’ <img src="images/search-icon.png" alt="search icon" height="30"> on the bottom of the Home frame </li>
+                        <li>
+                            Select the node on the right and drag to <strong>Search</strong> frame
+                            <img class="blockimg" src="images/objects.gif" alt="connecting node from 'search icon' on Home frame to Search frame" width="400">
+                        </li>
+                        <li>
+                            Set the interaction effect to <em>on tap</em> to create a user touch effect
+                            <img class="blockimg" src="images/ontap.png" alt="interaction details window on Figma" width="400">
+                        </li>
+                        <li>
+                            Select the ‘home icon’ <img src="images/home-icon.png" alt="home icon" height="30"> on the bottom of the <strong>Search</strong> frame and drag left node back to <strong>Home</strong> frame 
+                            <p class="note">Try doing the same for the <strong>Your Library</strong> frame</p>
+                        </li>
+                        <li>Test your prototype by clicking on the ‘play’ button on the top right of the control panel <img src="images/play-icon.png" alt="'play' button icon on Figma" height="30"></li>
+                    </ol>
+                    <p class="result">You have successfully connected two frames using objects.</p>
+                </section>
+
+                <section id="seventh" class="task">
+                    <h2>Share your prototype</h2>
+                    <!-- 2 steps -->
+                    <ol>
+                        <li>After completing your frame connections and interactions click the ‘play’ button on the top right of the control panel <img src="images/play-icon.png" alt="'play' button icon on Figma" height="30"></li>
+                        <li>
+                            Select the <strong>Share prototype</strong> button in blue to send email invites or to a copy shareable link
+                            <img class="blockimg" src="images/emailproto.png" alt="share window on Figma in presentation mode" width="500">
+                        </li>
+                    </ol>
+                    <p class="result">You have shared your prototype.</p>
+                </section>
+
+                <section id="eigth" class="reference">
+                    <a href="https://www.youtube.com/watch?v=Y_xKBY6rBfQ&t=134s" target="_blank"><h2>Related Video: Creating a prototype on Figma</h2></a>
+
+                </section>
+            </article>
+        </main>
+        <aside id="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#first">What is Figma?</a></li>
+                    <li><a href="#second">What can I do on Figma?</a></li>
+                    <li><a href="#third">Before you start</a></li>
+                    <li><a href="#fourth">Importing files</a></li>
+                    <li><a href="#fifth">Connecting frames</a></li>
+                    <li><a href="#sixth">Connecting frames with objects</a></li>
+                    <li><a href="#seventh">Sharing your prototype</a></li>
+                    <li><a href="#eigth">Video: Creating a prototype on Figma</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+</body>
+</html>

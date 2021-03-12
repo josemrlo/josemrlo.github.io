@@ -5,7 +5,7 @@
     const albumCover = document.getElementById('albumcover');
     const playBtn = document.getElementById('play');
     const pauseBtn = document.getElementById('pause');
-    const song = new Audio('media/beabodycut.mp3');
+    const song = new Audio('media/realiticut.mp3');
 
     playBtn.addEventListener('click', function(){
         song.play();

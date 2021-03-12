@@ -45,6 +45,38 @@ p {
     margin-top: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #E6E6E6;
+    letter-spacing: 1px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#portal {
+    font-family: 'neue_machinalight';
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+#pagenum {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: rotate(-90deg);
+}
+
+/***************************************** planet arrangement start *****************************************/
+section {
+    width: 700px;
+    padding-top: 150px;
+    padding-bottom: 75px;
+    margin: auto;
+}
+
 h1 {
     position: fixed;
     z-index: 1;
@@ -56,24 +88,6 @@ h1 {
     font-weight: 400;
     letter-spacing: -4px;
     text-shadow: 1px 1px 30px #000;
-}
-
-a {
-    text-decoration: none;
-    color: #E6E6E6;
-    letter-spacing: 1px;
-}
-
-span {
-    font-family: 'neue_machinaregular', monospace;
-}
-
-/* planet arrangement start */
-section {
-    width: 700px;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    margin: auto;
 }
 
 @keyframes spin{
@@ -93,39 +107,36 @@ section {
 }
 
 #sagrad {
-    background-image:url(images/planets/beabody.jpg);
+    background-image:url(images/sagrad.jpg);
     background-size: cover;
 }
 
 #beabody {
-    background-image:url(images/planets/sagrad.jpg);
+    background-image:url(images/beabody.jpg);
     background-size: cover;
 }
 
 #realiti {
-    background-image:url(images/planets/realiti.jpg);
+    background-image:url(images/realiti.jpg);
     background-size: cover;
 }
 
 #idoru {
-    background-image:url(images/planets/idoru.jpg);
+    background-image:url(images/idoru.jpg);
     background-size: cover;
 }
+/***************************************** end of planet arrangement *****************************************/
 
-.hidden {
-    visibility: hidden;
-}
-/* end of planet arrangement */
-
-/* album info start */
+/***************************************** album info start *****************************************/
 #albuminfo {
     display: flex;
     flex-direction: column;
     width: 380px;
     position: fixed;
-    right: -60px;
-    top: 30%;
+    right: -3%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    transition: all 3s;
 }
 
 h2 {
@@ -133,8 +144,17 @@ h2 {
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 42px;
     font-weight: 400;
-    padding-bottom: 13px;
+    padding-bottom: 5px;
     margin-bottom: 0;
+}
+
+h3 {
+    font-family: 'neue_machinalight';
+    font-size: 12px;
+    color: #808080;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    margin: 0;
 }
 
 #albumdes {
@@ -145,57 +165,36 @@ h2 {
     line-height: 28px;
 }
 
-#year {
-    font-size: 28px;
-    font-weight: 700;
-    width: 100%;
-    text-align: right;
+#heart {
+    width: 50px;
+    margin: auto;
 }
-/* end of album info */
 
-/* music section start */
+#albumcover {
+    display: block;
+    width: 170px;
+    height: 170px;
+    padding-top: 30px;
+    margin: auto;
+}
+
 #music {
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: space-between;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
-
-#album4 {
-    display: block;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    margin: auto;
 }
 
 #play, #pause {
     display: block;
-    background-color: #E6E6E6;
     width: 50px;
     height: 50px;
-}
-/* end of music section */
-
-#pagenum {
-    position: fixed;
-    top: 50%;
-    left: 30px;
-    transform: rotate(-90deg);
+    padding-top: 20px;
 }
 
-#portal {
-    font-family: 'neue_machinalight';
-    position: fixed;
-    top: 30px;
-    left: 30px;
-}
 
-#soundtrack {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-}
+/***************************************** end of album info *****************************************/
 
 #validate {
     position: fixed;

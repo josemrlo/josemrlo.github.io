@@ -136,7 +136,7 @@ h1 {
     right: -3%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: all 3s;
+    transition: all 1s;
 }
 
 h2 {

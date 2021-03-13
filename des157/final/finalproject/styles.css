@@ -69,6 +69,12 @@ a {
     transform: rotate(-90deg);
 }
 
+#validate {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
 /***************************************** planet arrangement start *****************************************/
 section {
     width: 700px;
@@ -103,7 +109,7 @@ h1 {
 }
 
 .maindisplay {
-    animation: spin 15s linear infinite;
+    animation: spin 25s linear infinite;
 }
 
 #sagrad {
@@ -136,14 +142,14 @@ h1 {
     right: -3%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: all 1s;
+    margin: auto;
 }
 
 h2 {
-    width: 100%;
     font-family: 'Nanum Gothic Coding', monospace;
     font-size: 42px;
     font-weight: 400;
+    width: 100%;
     padding-bottom: 5px;
     margin-bottom: 0;
 }
@@ -153,51 +159,58 @@ h3 {
     font-size: 12px;
     color: #808080;
     letter-spacing: 2px;
+    width: 100%;
     padding-bottom: 15px;
     margin: 0;
 }
 
 #albumdes {
-    width: 100%;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
+    width: 100%;
 }
 
 #heart {
-    width: 50px;
-    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 
 #albumcover {
     display: block;
     width: 170px;
     height: 170px;
-    padding-top: 30px;
     margin: auto;
 }
 
-#music {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 150px;
-    margin: auto;
-}
-
-#play, #pause {
+#playpause {
     display: block;
     width: 50px;
     height: 50px;
     padding-top: 20px;
+    margin: auto;
 }
 
+#playpause:hover {
+    cursor: pointer;
+}
 
+.playing {
+    animation: dance 1s infinite;
+}
+
+@keyframes dance {
+    10%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+}
 /***************************************** end of album info *****************************************/
-
-#validate {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-}

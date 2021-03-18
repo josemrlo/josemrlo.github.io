@@ -15,6 +15,44 @@
     font-style: normal;
 }
 
+/* Animations */
+
+@keyframes spin {
+    100%{background-position:100%;}
+}
+
+@keyframes dance {
+    10%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translate(0, -70%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+  
 ::selection {
     color: #0e0e0e;
     background: #0cd0d3;
@@ -37,7 +75,7 @@ body {
     height: 100vh;
 }
 
-div, a, p, h1, h2 {
+div, a, p, h1, h2, nav, ul, li {
     padding: 0;
 }
 
@@ -48,6 +86,17 @@ p {
 a {
     text-decoration: none;
     color: #E6E6E6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-left: 0;
+}
+
+#validate a {
     letter-spacing: 1px;
 }
 
@@ -55,27 +104,27 @@ a {
     visibility: hidden;
 }
 
+#validate {
+    position: fixed;
+    bottom: 3%;
+    left: 2%;
+}
+
 #portal {
     font-family: 'neue_machinalight';
     position: fixed;
-    top: 30px;
-    left: 30px;
+    top: 3%;
+    left: 2%;
 }
 
 #pagenum {
     position: fixed;
     top: 50%;
-    left: 30px;
+    left: 2%;
     transform: rotate(-90deg);
 }
 
-#validate {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-}
-
-/***************************************** planet arrangement start *****************************************/
+/* planet arrangement start */
 section {
     width: 700px;
     padding-top: 150px;
@@ -94,10 +143,7 @@ h1 {
     font-weight: 400;
     letter-spacing: -4px;
     text-shadow: 1px 1px 30px #000;
-}
-
-@keyframes spin{
-    100%{background-position:100%;}
+    animation: 1s ease-out 0s 1 slideUp;
 }
 
 .planet {
@@ -131,9 +177,9 @@ h1 {
     background-image:url(images/idoru.jpg);
     background-size: cover;
 }
-/***************************************** end of planet arrangement *****************************************/
+/* end of planet arrangement */
 
-/***************************************** album info start *****************************************/
+/* album info start */
 #albuminfo {
     display: flex;
     flex-direction: column;
@@ -141,6 +187,7 @@ h1 {
     position: fixed;
     right: -3%;
     top: 50%;
+    animation: 1s ease-out 0s 1 slideInFromRight;
     transform: translate(-50%, -50%);
     margin: auto;
 }
@@ -199,18 +246,4 @@ h3 {
 .playing {
     animation: dance 1s infinite;
 }
-
-@keyframes dance {
-    10%, 100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.9);
-    }
-
-    80% {
-        transform: scale(1.1);
-    }
-}
-/***************************************** end of album info *****************************************/
+/* end of album info */

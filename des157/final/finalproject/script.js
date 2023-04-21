@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
         if(count == 0){
             count = 1;
             song.play();
-            playPauseBtn.src = "images/pause.svg";
+            playPauseBtn.src = "images/stop.svg";
             albumCover.classList.add("playing");
         }
         else {
@@ -59,7 +59,7 @@ window.addEventListener('load', function(){
             realiti.classList.add("maindisplay");
             beabody.classList.remove("maindisplay");
             h2.innerHTML = "Art Angels";
-            albumDes.innerHTML = `I discovered Grimes while working as a barista. After listening to "Oblivion" I had to find out more. I remember opening Spotify on my commute back home and began exploring her newest ablum at the time, Art Angels. It was pop music unlike I'd ever heard and was instantly hooked. "Realiti" did nice things to my brain and I fell in love with the demo version of the song.`;
+            albumDes.innerHTML = `I discovered Grimes as a barista in 2017. The track "Realiti" was infectious pop music unlike I’d ever heard. Art Angels marks the beginning of my love for Grimes’ work and more broadly, experimental pop.`;
             albumCover.src = "images/artangels.jpg";
             song.pause();
             playPauseBtn.src = "images/play.svg";
@@ -69,12 +69,12 @@ window.addEventListener('load', function(){
         }
         else if(counter == 2){
             countPage.innerHTML = "2 / 4";
-            h1.innerHTML = "beabody";
+            h1.innerHTML = "BEABODY";
             beabody.classList.add("maindisplay");
             realiti.classList.remove("maindisplay");
             sagrad.classList.remove("maindisplay");
             h2.innerHTML = "Visions";
-            albumDes.innerHTML = `This album hands down changed my taste in music. I put off listening to this for a while because it felt strange compared to the radio hits I was used to. This album made me truly appreciate Grimes as an artist. "Be a Body" takes me on an intergalactic adventure, enjoy!`;
+            albumDes.innerHTML = `This album created space for me to reevaluate the identities I'd been holding onto since adolescence. It validated my love of electronic music and informed the Spotify algorithm that exposed me to some of my most listened to artists of today.`;
             albumCover.src = "images/visions.jpg";
             sound.pause();
             playPauseBtn.src = "images/play.svg";
@@ -84,12 +84,12 @@ window.addEventListener('load', function(){
         }
         else if(counter == 3){
             countPage.innerHTML = "3 / 4";
-            h1.innerHTML = "Sagrad";
+            h1.innerHTML = "SAGRAD";
             sagrad.classList.add("maindisplay");
             beabody.classList.remove("maindisplay");
             idoru.classList.remove("maindisplay");
             h2.innerHTML = "Halfaxa";
-            albumDes.innerHTML = `I never expected to enjoy listening to this album (listen to "Weregild" from this album and you'll get a clue as to why). Boy was I wrong to doubt how much I'd love this album. Halfaxa is the album I turn to when I don't want to listen to lighthearted instruments or lyrical music — it's the perfect album to just be with. (I love Weregild now btw, but Sagrad прекрасный takes the top spot).`;
+            albumDes.innerHTML = `My love for this albums continues to grow. Halfaxa is the album I turn to when I don't want to listen to lighthearted instrumentals or lyrical music — it's the perfect album to be with in the late hours of the night.`;
             albumCover.src = "images/halfaxa.jpg";
             sound.pause();
             playPauseBtn.src = "images/play.svg";
@@ -103,7 +103,7 @@ window.addEventListener('load', function(){
             idoru.classList.add("maindisplay");
             sagrad.classList.remove("maindisplay");
             h2.innerHTML = "Miss Anthropocene";
-            albumDes.innerHTML = `This album is my all time favourite. Something about end-of-the-world themes, ethereal sounds, and soft annihilation just does it for me I guess? On a less hipstery note, this album got me thinking critically about the issues humanity has created for itself. Climate change, drug addiction, Algorithms + the dark side of tech are all present here. And finally, "IDORU" reminds me to live authentically despite the tragedies that might bring.`;
+            albumDes.innerHTML = `In an era of anxiety brought on by impending climate disaster, social and environmental injustice, drug addiction, and the psychological exploitation of the attention economy, I find relief in this album's expression of these modern-day demons.`;
             albumCover.src = "images/missanthropocene.jpg";
             sound.pause();
             playPauseBtn.src = "images/play.svg";

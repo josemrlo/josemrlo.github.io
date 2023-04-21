@@ -68,7 +68,7 @@ body {
     background-attachment:fixed;
     font-family: 'Nanum Gothic Coding', monospace;
     -webkit-font-smoothing: antialiased;
-    font-size: 19px;
+    font-size: 16px;
     color: #E6E6E6;
     position: relative;
     width: 100%;
@@ -96,7 +96,7 @@ li {
     padding-left: 0;
 }
 
-#validate a {
+#profile a {
     letter-spacing: 1px;
 }
 
@@ -104,54 +104,67 @@ li {
     visibility: hidden;
 }
 
-#validate {
+#profile {
     position: fixed;
-    bottom: 3%;
-    left: 2%;
+    bottom: 2%;
+    left: 3%;
 }
 
-#portal {
-    font-family: 'neue_machinalight';
+#grimeswiki {
     position: fixed;
-    top: 3%;
-    left: 2%;
+    top: 2%;
+    left: 3%;
+}
+
+#grimeslogo {
+    width: 18%;
+    height: 18%;
+}
+
+#grimeslogo:hover {
+    cursor: pointer;
 }
 
 #pagenum {
     position: fixed;
-    top: 50%;
-    left: 2%;
-    transform: rotate(-90deg);
+    top: 2%;
+    right: 3%;
 }
 
 /* planet arrangement start */
 section {
-    width: 700px;
-    padding-top: 150px;
-    padding-bottom: 75px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    padding-top: 50px;
+    padding-bottom: 300px;
 }
 
 h1 {
+    display: inline;
     position: fixed;
     z-index: 1;
-    left: 27%;
-    top: 50%;
+    left: 49%;
+    top: 18%;
     transform: translate(-50%, -50%);
     font-family: 'neue_machinaregular', monospace;
-    font-size: 150px;
+    font-size: 90px;
     font-weight: 400;
+    text-align: center;
     letter-spacing: -4px;
     text-shadow: 1px 1px 30px #000;
     animation: 1s ease-out 0s 1 slideUp;
 }
 
 .planet {
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     box-shadow: -60px -60px 65px 2px #000 inset, 2px 2px 150px 2px rgb(21, 21, 21) inset, 0px 0px 70px rgb(38, 38, 38);
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .maindisplay {
@@ -183,27 +196,34 @@ h1 {
 #albuminfo {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 320px;
     position: fixed;
-    right: -3%;
-    top: 50%;
+    left: 49%;
+    top: 65%;
     animation: 1s ease-out 0s 1 slideInFromRight;
     transform: translate(-50%, -50%);
     margin: auto;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
 }
 
 h2 {
     font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 42px;
+    font-size: 28px;
     font-weight: 400;
     width: 100%;
     padding-bottom: 5px;
     margin-bottom: 0;
+    margin-top: 0;
 }
+
 
 h3 {
     font-family: 'neue_machinalight';
-    font-size: 12px;
+    font-size: 10px;
     color: #808080;
     letter-spacing: 2px;
     width: 100%;
@@ -213,7 +233,7 @@ h3 {
 
 #albumdes {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     width: 100%;
@@ -224,18 +244,24 @@ h3 {
     text-align: center;
 }
 
+#musicinteraction {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
 #albumcover {
     display: block;
-    width: 170px;
-    height: 170px;
+    width: 120px;
+    height: 120px;
     margin: auto;
 }
 
 #playpause {
     display: block;
-    width: 50px;
-    height: 50px;
-    padding-top: 20px;
+    width: 80px;
+    height: 40px;
     margin: auto;
 }
 
@@ -247,3 +273,409 @@ h3 {
     animation: dance 1s infinite;
 }
 /* end of album info */
+
+@media only screen and (min-width: 599px) {
+
+    /* planet arrangement start */
+    section {
+        width: 700px;
+        padding-top: 50px;
+        padding-bottom: 150px;
+        margin: auto;
+    }
+
+    h1 {
+        display: inline;
+        position: fixed;
+        z-index: 1;
+        left: 49%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        font-family: 'neue_machinaregular', monospace;
+        font-size: 120px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: -4px;
+        text-shadow: 1px 1px 30px #000;
+        animation: 1s ease-out 0s 1 slideUp;
+    }
+
+    .planet {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        box-shadow: -60px -60px 65px 2px #000 inset, 2px 2px 150px 2px rgb(21, 21, 21) inset, 0px 0px 70px rgb(38, 38, 38);
+        margin-bottom: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .maindisplay {
+        animation: spin 25s linear infinite;
+    }
+
+    #sagrad {
+        background-image:url(images/sagrad.jpg);
+        background-size: cover;
+    }
+
+    #beabody {
+        background-image:url(images/beabody.jpg);
+        background-size: cover;
+    }
+
+    #realiti {
+        background-image:url(images/realiti.jpg);
+        background-size: cover;
+    }
+
+    #idoru {
+        background-image:url(images/idoru.jpg);
+        background-size: cover;
+    }
+    /* end of planet arrangement */
+
+    /* album info start */
+    #albuminfo {
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        position: fixed;
+        left: 49%;
+        top: 68%;
+        animation: 1s ease-out 0s 1 slideInFromRight;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        border-top: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+    }
+
+    h2 {
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-size: 28px;
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    
+    h3 {
+        font-family: 'neue_machinalight';
+        font-size: 10px;
+        color: #808080;
+        letter-spacing: 2px;
+        width: 100%;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+    
+    #albumdes {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    #heart {
+        width: 100%;
+        text-align: center;
+    }
+
+    #albumcover {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: auto;
+    }
+
+    #playpause {
+        display: block;
+        width: 80px;
+        height: 40px;
+        margin: auto;
+    }
+
+    #playpause:hover {
+        cursor: pointer;
+    }
+
+    .playing {
+        animation: dance 1s infinite;
+    }
+    /* end of album info */
+
+}
+
+@media only screen and (min-width: 1199px) {
+
+    /* planet arrangement start */
+    section {
+        width: 700px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        margin: auto;
+    }
+
+    h1 {
+        position: fixed;
+        z-index: 1;
+        left: 28%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        font-family: 'neue_machinaregular', monospace;
+        font-size: 150px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: -4px;
+        text-shadow: 1px 1px 30px #000;
+        animation: 1s ease-out 0s 1 slideUp;
+    }
+
+    .planet {
+        width: 700px;
+        height: 700px;
+        border-radius: 50%;
+        box-shadow: -60px -60px 65px 2px #000 inset, 2px 2px 150px 2px rgb(21, 21, 21) inset, 0px 0px 70px rgb(38, 38, 38);
+        margin-bottom: 100px;
+    }
+
+    .maindisplay {
+        animation: spin 25s linear infinite;
+    }
+
+    #sagrad {
+        background-image:url(images/sagrad.jpg);
+        background-size: cover;
+    }
+
+    #beabody {
+        background-image:url(images/beabody.jpg);
+        background-size: cover;
+    }
+
+    #realiti {
+        background-image:url(images/realiti.jpg);
+        background-size: cover;
+    }
+
+    #idoru {
+        background-image:url(images/idoru.jpg);
+        background-size: cover;
+    }
+    /* end of planet arrangement */
+
+    /* album info start */
+    #albuminfo {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        position: fixed;
+        left: 78%;
+        top: 55%;
+        animation: 1s ease-out 0s 1 slideInFromRight;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        border-top: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+    }
+
+    h2 {
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-size: 42px;
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-family: 'neue_machinalight';
+        font-size: 12px;
+        color: #808080;
+        letter-spacing: 2px;
+        width: 100%;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    #albumdes {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    #heart {
+        width: 100%;
+        text-align: center;
+    }
+
+    #albumcover {
+        display: block;
+        width: 170px;
+        height: 170px;
+        margin: auto;
+    }
+
+    #playpause {
+        display: block;
+        width: 100px;
+        height: 50px;
+        margin: auto;
+    }
+
+    #playpause:hover {
+        cursor: pointer;
+    }
+
+    .playing {
+        animation: dance 1s infinite;
+    }
+    /* end of album info */
+
+}
+
+@media only screen and (min-width: 1999px) {
+
+    /* planet arrangement start */
+    section {
+        width: 800px;
+        padding-top: 200px;
+        padding-bottom: 150px;
+        margin: auto;
+    }
+
+    h1 {
+        position: fixed;
+        z-index: 1;
+        left: 30%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        font-family: 'neue_machinaregular', monospace;
+        font-size: 180px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: -4px;
+        text-shadow: 1px 1px 30px #000;
+        animation: 1s ease-out 0s 1 slideUp;
+    }
+
+    .planet {
+        width: 750px;
+        height: 750px;
+        border-radius: 50%;
+        box-shadow: -60px -60px 65px 2px #000 inset, 2px 2px 150px 2px rgb(21, 21, 21) inset, 0px 0px 70px rgb(38, 38, 38);
+        margin-bottom: 150px;
+    }
+
+    .maindisplay {
+        animation: spin 25s linear infinite;
+    }
+
+    #sagrad {
+        background-image:url(images/sagrad.jpg);
+        background-size: cover;
+    }
+
+    #beabody {
+        background-image:url(images/beabody.jpg);
+        background-size: cover;
+    }
+
+    #realiti {
+        background-image:url(images/realiti.jpg);
+        background-size: cover;
+    }
+
+    #idoru {
+        background-image:url(images/idoru.jpg);
+        background-size: cover;
+    }
+    /* end of planet arrangement */
+
+    /* album info start */
+    #albuminfo {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        position: fixed;
+        left: 70%;
+        top: 55%;
+        animation: 1s ease-out 0s 1 slideInFromRight;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        border-top: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+    }
+
+    h2 {
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-size: 54px;
+        font-weight: 400;
+        width: 100%;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-family: 'neue_machinalight';
+        font-size: 16px;
+        color: #808080;
+        letter-spacing: 2px;
+        width: 100%;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    #albumdes {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    #heart {
+        width: 100%;
+        text-align: center;
+    }
+
+    #albumcover {
+        display: block;
+        width: 170px;
+        height: 170px;
+        margin: auto;
+    }
+
+    #playpause {
+        display: block;
+        width: 120px;
+        height: 60px;
+        margin: auto;
+    }
+
+    #playpause:hover {
+        cursor: pointer;
+    }
+
+    .playing {
+        animation: dance 1s infinite;
+    }
+    /* end of album info */
+
+}

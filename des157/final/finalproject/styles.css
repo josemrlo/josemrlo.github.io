@@ -108,6 +108,7 @@ li {
     position: fixed;
     bottom: 2%;
     left: 3%;
+    font-size: 10px;
 }
 
 #grimeswiki {
@@ -136,9 +137,10 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 390px;
-    padding-top: 25px;
-    padding-bottom: 250px;
+    width: 380px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    margin: auto;
 }
 
 h1 {
@@ -158,8 +160,8 @@ h1 {
 }
 
 .planet {
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 370px;
     border-radius: 50%;
     box-shadow: -60px -60px 65px 2px #000 inset, 2px 2px 150px 2px rgb(21, 21, 21) inset, 0px 0px 70px rgb(38, 38, 38);
     margin-bottom: 150px;

@@ -136,9 +136,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 500px;
-    padding-top: 50px;
-    padding-bottom: 300px;
+    width: 390px;
+    padding-top: 25px;
+    padding-bottom: 250px;
 }
 
 h1 {
@@ -146,10 +146,10 @@ h1 {
     position: fixed;
     z-index: 1;
     left: 49%;
-    top: 18%;
+    top: 19%;
     transform: translate(-50%, -50%);
     font-family: 'neue_machinaregular', monospace;
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 400;
     text-align: center;
     letter-spacing: -4px;
@@ -158,8 +158,8 @@ h1 {
 }
 
 .planet {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     box-shadow: -60px -60px 65px 2px #000 inset, 2px 2px 150px 2px rgb(21, 21, 21) inset, 0px 0px 70px rgb(38, 38, 38);
     margin-bottom: 150px;
@@ -196,7 +196,7 @@ h1 {
 #albuminfo {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 300px;
     position: fixed;
     left: 49%;
     top: 65%;
@@ -207,12 +207,12 @@ h1 {
     border-bottom: 1px solid #E6E6E6;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 30px;
+    padding: 20px 20px;
 }
 
 h2 {
     font-family: 'Nanum Gothic Coding', monospace;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     width: 100%;
     padding-bottom: 5px;
@@ -233,9 +233,9 @@ h3 {
 
 #albumdes {
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 22px;
     width: 100%;
 }
 
@@ -253,8 +253,8 @@ h3 {
 
 #albumcover {
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin: auto;
 }
 

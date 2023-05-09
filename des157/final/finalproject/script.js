@@ -117,7 +117,7 @@ window.addEventListener('load', function(){
             beabody.classList.remove("maindisplay");
             idoru.classList.remove("maindisplay");
             h2.innerHTML = "Halfaxa";
-            albumDes.innerHTML = `My love for this albums continues to grow. Halfaxa is the album I turn to when I don't want to listen to lighthearted instrumentals or lyrical music — it's the perfect album to be with in the late hours of the night.`;
+            albumDes.innerHTML = `My love for this album continues to grow. Halfaxa is the album I turn to when I don't want to listen to lighthearted instrumentals or lyrical music — it's the perfect album to be with in the late hours of the night.`;
             albumCover.src = "images/halfaxa.jpg";
         }
         else if(currentSongId == 4){
